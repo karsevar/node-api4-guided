@@ -1,5 +1,8 @@
 const express = require('express');
 const helmet = require('helmet');
+require('dotenv').config();
+
+console.log('environment:', process.env.NODE_ENV);
 
 const apiRouter = require('./api-router.js');
 
